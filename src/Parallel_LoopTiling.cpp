@@ -284,7 +284,7 @@ int main(int argc, char* argv[])
     /* Benchmark time calculation module */
     auto time = average_time(build_from_matrix, matrix, n, atoi(argv[2]));
 
-    cout << "Build from Matrix Parallel (with Tiling Loop and parallel) time = " << time << "\n" <<endl;
+    cout << "Build from Matrix Parallel (with Tiling Loop) time = " << time << "\n" <<endl;
 	
     return 0;
 }
