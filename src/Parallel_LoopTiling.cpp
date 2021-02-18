@@ -144,7 +144,7 @@ int build_from_matrix_helper_sequential (const K2_tree& mat, k2_tree_node& matri
     return found;
 }
 
-int build_from_matrix_helper_prallel (const K2_tree& mat, k2_tree_node& matrix, int n)
+int build_from_matrix_helper_parallel (const K2_tree& mat, k2_tree_node& matrix, int n)
 {
     int i, j, ii, jj;
     const auto max_size_i = matrix.i+n, max_size_j = matrix.j+n;
@@ -208,13 +208,13 @@ void build_from_matrix(const K2_tree& mat, int size, int thrds, int number_child
         else if(matrix_size == 0)
             break;
         else if (size == matrix_size)
-            build_from_matrix_helper_prallel(mat,matrix,matrix_size);
+            build_from_matrix_helper_parallel(mat,matrix,matrix_size);
         else
         {
             if(matrix_size <= 64) // Load balancing
                 rt = build_from_matrix_helper_sequential(mat,matrix,matrix_size);
             else
-                rt = build_from_matrix_helper_prallel(mat,matrix,matrix_size);
+                rt = build_from_matrix_helper_parallel(mat,matrix,matrix_size);
             k_t[t] = rt;
             t++;
         }
