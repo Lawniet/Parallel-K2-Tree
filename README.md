@@ -39,8 +39,7 @@ Embora tenhamos realizado testes de validação de unidade, em caso de bugs nós
 ## Licenciamento
 
 Este é um software livre fornecido sob a GNU General Public License
-(GPLv3). Para mais informações veja [COPYING file] [CF] na biblioteca
-diretório.
+(GPLv3). Para mais informações veja [COPYING file] (https://github.com/Lawniet/Parallel-K2-Tree/blob/main/LICENSE).
 
 # Referências
 
