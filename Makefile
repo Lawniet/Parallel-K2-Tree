@@ -92,21 +92,21 @@ write7:  k2tree7
 
 # Compiling all versions
 k2tree0:
-	$(CXX) $(CPPFLAGS) ./src/K2_tree_0.cpp -o k2tree0 $(LIBS)
+	$(CXX) $(CPPFLAGS) ./src/ChangeOver.cpp -o k2tree0 $(LIBS)
 k2tree1:
-	$(CXX) $(CPPFLAGS) ./src/K2_tree_1.cpp -o k2tree1 $(LIBS) -fopenmp
+	$(CXX) $(CPPFLAGS) ./src/Parallel_ChangeOver.cpp-o k2tree1 $(LIBS) -fopenmp
 k2tree2:
-	$(CXX) $(CPPFLAGS) ./src/K2_tree_2.cpp -o k2tree2 $(LIBS)
+	$(CXX) $(CPPFLAGS) ./src/LoopTiling.cpp -o k2tree2 $(LIBS)
 k2tree3:
-	$(CXX) $(CPPFLAGS) ./src/K2_tree_3.cpp -o k2tree3 $(LIBS) -fopenmp
+	$(CXX) $(CPPFLAGS) ./src/Parallel_LoopTiling.cpp -o k2tree3 $(LIBS) -fopenmp
 k2tree4:
-	$(CXX) $(CPPFLAGS) ./src/K2_tree_4.cpp -o k2tree4 $(LIBS)
+	$(CXX) $(CPPFLAGS) ./src/LoopUnrolling.cpp -o k2tree4 $(LIBS)
 k2tree5:
-	$(CXX) $(CPPFLAGS) ./src/K2_tree_5.cpp -o k2tree5 $(LIBS) -fopenmp
+	$(CXX) $(CPPFLAGS) ./src/Parallel_LoopUnrolling.cpp -o k2tree5 $(LIBS) -fopenmp
 k2tree6:
-	$(CXX) $(CPPFLAGS) ./src/K2_tree_6.cpp -o k2tree6 $(LIBS)
+	$(CXX) $(CPPFLAGS) ./src/Hybrid.cpp -o k2tree6 $(LIBS)
 k2tree7:
-	$(CXX) $(CPPFLAGS) ./src/K2_tree_7.cpp -o k2tree7 $(LIBS) -fopenmp
+	$(CXX) $(CPPFLAGS) ./src/Parallel_Hybrid.cpp -o k2tree7 $(LIBS) -fopenmp
 
 # Cleaning the project
 clean:
