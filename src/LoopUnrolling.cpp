@@ -8,7 +8,6 @@
 #include <algorithm>
 #include <cmath>
 #include <chrono>
-#include <omp.h>
 #include <vector>
 #include <queue>
 #include <cmath>
