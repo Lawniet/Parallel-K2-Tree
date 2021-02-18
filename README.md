@@ -8,17 +8,39 @@ Para a realização dos estudos utilizamos preferencialmento os livros referênc
 
 Além disto foi utilizada na base de conhecimento as reuniões realizadas pela ferramenta Google Meet, as quais foram períodicas a fim de esclarecer a pesquisa e abordar novos tópicos. As reuniões foram gravadas, sob autorização, pelo prof. Daniel Saad. 
 
-## Comparação entre a DFS e BFS >> DFS_BFS.cpp
+## Requisitos
 
-Algoritmo desenvolvido como solicitação da [reunião do dia 24/08/2020](https://drive.google.com/file/d/13ybeP0rX1PqOXWXLM1kz87TL-FWjX5tb/view?usp=sharing) seu código fonte também está disponível no servidor local Turing.
+Para complilar os códigos aqui disponíveis será necessário:
 
-## Comprrensão do Vetor de bits >> Vetor_Bits.cpp
+* Um compilador moderno pronto para C ++ 11, como `g ++` versão 4.9 ou superior ou `clang` versão 3.2 ou superior.
+* Biblioteca SDSL-Lite ou uma similar que fornce suporte à vetores de bits
+* OpenMP na versão 4.5 ou supoerior.
+* O sistema de compilação [cmake] [cmake].
+* Um sistema operacional de 64 bits. Tanto o Mac OS X quanto o Linux são atualmente suportados.
+* Para maior desempenho, o processador do sistema deve suportar operações de bit rápido disponíveis em `SSE4.2`
 
-Algoritmo desenvolvido para melhor compreensão dos vetores de bits e suas funcionalidades, visto que essa é uma biblioteca muito importante para o funcionamento da estrutura K²-tree. Código fonte também está disponível no servidor local Turing.
+## Utilização
 
-## Compreensão das diferenças entre execuções paralelas e sequenciais >> BFS_Sequecial_Paralelo.cpp
+Para baixar e utilizar os módulos de teste, favor usar os seguintes comandos:
 
-Algoritmo para testes iniciais de computação paralela com cpp OpenMP. Código fonte também está disponível no servidor local computacaoifb.com e na IDE [Repl.it: BFSSeqPar](https://repl.it/@ParallelTrees/BFSSeqPar).
+```sh
+git clone https://github.com/Lawniet/Parallel-K2-Tree.git
+cd Parallel-K2-Tree-main
+Make all
+```
+## Bugs e demais problemas técnicos
+
+Embora tenhamos realizado testes de validação de unidade, em caso de bugs nós encorajamos você a relatar quaisquer problemas por meio do [sistema de rastreamento de problemas do github] (https://github.com/Lawniet/Parallel-Trees/issues) desse projeto. 
+
+## Recursos externos utilizados no projeto
+
+* Biblioteca [SDSL-Lite](https://github.com/simongog/sdsl-lite), módulo de vetor de bits e o algoritmo de construção K²-Tree.
+
+## Licenciamento
+
+Este é um software livre fornecido sob a GNU General Public License
+(GPLv3). Para mais informações veja [COPYING file] [CF] na biblioteca
+diretório.
 
 # Referências
 
