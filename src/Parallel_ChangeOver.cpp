@@ -15,7 +15,7 @@
 #include <sdsl/bit_vectors.hpp>
 
 /* Arity used for K2-Tree */
-#define K 8
+#define K 2
 
 using namespace std;
 
