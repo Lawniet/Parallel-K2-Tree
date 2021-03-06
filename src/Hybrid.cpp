@@ -229,14 +229,14 @@ int main(int argc, char* argv[])
     unsigned size, n;
     file >> size; // Number of vertex in the WebGraph
     int xi, yj;
-    float tam = log2(size); // For testing based on final arity
+    float tam = log(size) / log(K); // For testing based on final arity
 
     if (!file) {
         cout << "Failed to open the file";    // In case error during opening
     }
 
     /* Maintains original size or calculates approximate size with K^|log K n| */
-    (tam == (int)log2(size)/(int)log2(2)) ? n = size :  n = 1 << ((int) floor(log2(size)) + 1);
+    (tam == (int)(log(size) / log(K)) ) ? n = size :  n = 1 << (int) log2 (K) *  ((int) floor(log(size)/log(K)) + 1);
     cout << "# Matrix size analyzed = "<< n << endl;
 
     K2_tree matrix(n,n);
